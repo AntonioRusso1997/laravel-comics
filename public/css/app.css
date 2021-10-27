@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);/*COMMONS SCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
+
+/*COMMONS SCSS */
+/*HEADER SCSS */
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+header .header-top {
+  color: white;
+  background-color: #0282f9;
+  width: 100%;
+  height: 25px;
+}
+header .header-top div {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header-top div h3 {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+header .header-top div h3:first-child {
+  margin-right: 50px;
+}
+header .header-down {
+  width: 65%;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .header-down .logo-home {
+  height: 100%;
+  padding: 15px 0;
+}
+header .header-down .logo-home img {
+  height: 100%;
+}
+header .header-down ul {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style-type: none;
+  color: black;
+}
+header .header-down ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 30px;
+}
+header .header-down ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  height: 120px;
+  line-height: 120px;
+  vertical-align: middle;
+  color: black;
+}
+header .header-down ul li a:hover {
+  color: #0282f9;
+  border-bottom: 5px solid #0282f9;
+}
+header .header-down .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  padding: 0 20px;
+}
+header .header-down .search input {
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  border-bottom: 3px solid #0282f9;
+}
+
+/*HEADER SCSS */
