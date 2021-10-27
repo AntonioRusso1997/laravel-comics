@@ -1,0 +1,109 @@
+/* Main SCSS */
+main {
+    background-color: black;
+    
+    .main-content {
+        width: 70%;  
+        margin: 0 auto;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .main-title {
+        position: absolute;
+        top: -25px;
+        left: 10px;
+        font-size: 26px;
+        font-weight: 800;
+        padding: 10px 30px;
+        background-color: $main-blue;
+        }
+          .comics-section {
+          margin: 0 auto;
+          padding: 30px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .comics-box {
+            margin-top: 20px;
+            width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            flex-wrap: wrap;
+    
+            .card {
+                width: calc(100% / 6);
+                height: 200px;
+                font-size: 12px;
+                margin-bottom: 40px;
+                cursor: pointer;
+                
+                .card-img {
+                  width: 175px;
+                  height: 175px;
+                  overflow: hidden;
+                  margin-bottom: 15px;
+                  img {
+                    width: 100%;
+                  }
+                }
+                h3 {
+                    text-transform: uppercase;
+                  width: 90%;
+                  
+                }
+              }
+          }
+        }
+        button {
+          font-size: 13px;
+          padding: 10px 50px;
+          font-weight: 600;
+          background-color: $main-blue;
+          color: white;
+          margin-bottom: 10px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+      .main-bottom {
+        background-color: $main-blue;
+      }
+      .bottom-content {
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          
+          li a {
+            margin-right: 60px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 60px;
+              margin-right: 10px; 
+            }
+          }
+          li:last-child a img {
+            height: 40px;
+          }
+        }
+      }
+}
+
+  
+
+/* Main SCSS */  

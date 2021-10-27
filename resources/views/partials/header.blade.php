@@ -10,8 +10,8 @@
             <img src="{{ asset('images/dc-logo.png')}}" alt="Logo DC Comics">
         </div>
         <ul>
-            <li><a href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('fumetti') }}">COMICS</a></li>
+            <li><a href="{{ route('home') }}">Comics</a></li>
+            <li><a href="{{ route('contatti') }}">Contacts</a></li>
             <li><a href="{{ route('noi') }}">About</a></li>
         </ul>
         <div class="search">

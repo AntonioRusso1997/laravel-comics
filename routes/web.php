@@ -14,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $array_comics = config('comics');
+    $data = [
+        'fumetti' => $array_comics
+    ];
+    return view('home', $data);
 })->name('home');
 
-Route::get('/comic_books', function () {
-    return view('comic_books');
-})->name('fumetti');
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contatti');
 
 Route::get('/about', function () {
     return view('about');
