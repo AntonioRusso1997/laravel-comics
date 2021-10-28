@@ -15,16 +15,26 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $array_comics = config('comics');
+    $array_banners = config('banners');
     $data = [
-        'fumetti' => $array_comics
+        'fumetti' => $array_comics,
+        'banners' => $array_banners
     ];
     return view('home', $data);
 })->name('home');
 
 Route::get('/contacts', function () {
-    return view('contacts');
+    $array_banners = config('banners');
+    $data = [
+        'banners' => $array_banners
+    ];
+    return view('contacts', $data);
 })->name('contatti');
 
 Route::get('/about', function () {
-    return view('about');
+    $array_banners = config('banners');
+    $data = [
+        'banners' => $array_banners
+    ];
+    return view('about', $data);
 })->name('noi');

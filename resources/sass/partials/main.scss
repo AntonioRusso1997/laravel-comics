@@ -20,6 +20,23 @@ main {
         padding: 10px 30px;
         background-color: $main-blue;
         }
+        .about-us-section {
+          padding: 50px 0;
+          font-size: 20px;
+          img {
+            width: 100%;
+            border-radius: 20px;
+          }
+          p {
+            line-height: 200%;
+          }
+        }
+        .contacts-section {
+          div {
+            margin: 30px 0;
+            font-size: 20px;
+          }
+        }
           .comics-section {
           margin: 0 auto;
           padding: 30px 20px;
@@ -69,41 +86,6 @@ main {
           cursor: pointer;
         }
       }
-      .main-bottom {
-        background-color: $main-blue;
-      }
-      .bottom-content {
-        width: 70%;
-        margin: 0 auto;
-        padding: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ul {
-          list-style: none;
-          display: flex;
-          align-items: center;
-          
-          li a {
-            margin-right: 60px;
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-              height: 60px;
-              margin-right: 10px; 
-            }
-          }
-          li:last-child a img {
-            height: 40px;
-          }
-        }
-      }
 }
-
-  
 
 /* Main SCSS */  
